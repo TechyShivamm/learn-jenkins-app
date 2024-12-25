@@ -16,6 +16,7 @@ pipeline {
                     npm --version
                     sudo chown -R 666 "/.npm"
                     npm install
+                    sudo chown -R 666 "/.npm"
                     npm run build
                     ls -la
                 '''
