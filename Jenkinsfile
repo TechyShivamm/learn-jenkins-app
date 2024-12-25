@@ -8,6 +8,7 @@ pipeline {
                     image 'node:18-alpine'
                     reuseNode true
                 }
+           }
             steps {
                 sh '''
                     ls -la
@@ -33,5 +34,4 @@ pipeline {
         junit 'test-results/junit.xml'
       }
     }
-}
 }
